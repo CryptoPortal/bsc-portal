@@ -166,18 +166,18 @@ export default function Pool() {
       )}
       {poolInfoReady && (
         <ApproveCreateButtons 
-          // tokenA={tokenA}
-          // tokenB={tokenB}
-          // rewardTokenAddress={rewardTokenAddress} 
-          // rewardTokenAmount={rewardTokenAmount}
-          // stakingDuration={parseInt(stakingDuration)}
-          // startTime={parseInt(startTime)}  
-          tokenA='0xdF5f5b7aA8546Ec6C480f6Ac1D684E317151d400'
-          tokenB='0xDC573Aa094D9c7B10f0c70fb4060844a8Abab872'
-          rewardTokenAddress='0xdF5f5b7aA8546Ec6C480f6Ac1D684E317151d400' 
-          rewardTokenAmount='24'
-          stakingDuration={86400}
-          startTime={1616701194}  
+          tokenA={tokenA}
+          tokenB={tokenB}
+          rewardTokenAddress={rewardTokenAddress} 
+          rewardTokenAmount={rewardTokenAmount}
+          stakingDuration={parseInt(stakingDuration)}
+          startTime={parseInt(startTime)}  
+          // tokenA='0xdF5f5b7aA8546Ec6C480f6Ac1D684E317151d400'
+          // tokenB='0xDC573Aa094D9c7B10f0c70fb4060844a8Abab872'
+          // rewardTokenAddress='0xdF5f5b7aA8546Ec6C480f6Ac1D684E317151d400' 
+          // rewardTokenAmount='24'
+          // stakingDuration={86400}
+          // startTime={1616701194}  
         />
       )}
     </>
