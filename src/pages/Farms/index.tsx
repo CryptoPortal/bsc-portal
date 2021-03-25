@@ -199,13 +199,13 @@ const PoolCard = (props) => {
   const { poolAddress, tokenAAddress, tokenBAddress, lpAddress, rewardAddress } = props
   const { tokenASymbol, tokenBSymbol, rewardSymbol, isApproved, modalAmount, earnedAmount, depositedAmount, modalType, lpAvailable, 
     setModalAmount, approve, stake, withdraw, claim, setModalType } = usePool({ poolAddress, tokenAAddress, tokenBAddress, lpAddress, rewardAddress })
-  if (!tokenASymbol) {
-    return (
-      <EmptyCard>
-        <Spinner />
-      </EmptyCard>
-    )
-  }
+  // if (!tokenASymbol) {
+  //   return (
+  //     <EmptyCard>
+  //       <Spinner />
+  //     </EmptyCard>
+  //   )
+  // }
   return (
     <>
       <Card>
