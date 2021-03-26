@@ -177,7 +177,7 @@ export default function Pool() {
           // rewardTokenAddress='0xdF5f5b7aA8546Ec6C480f6Ac1D684E317151d400' 
           // rewardTokenAmount='24'
           // stakingDuration={86400}
-          // startTime={1616701194}  
+          // startTime={1616716481}  
         />
       )}
     </>

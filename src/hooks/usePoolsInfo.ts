@@ -7,8 +7,10 @@ const usePoolsInfo = () => {
 	const getPools = async () => {
 		try {
 			const poolNumberWei = await poolCreatorContract.poolNumber()
-			const poolNumber = parseInt(poolNumberWei, 16)
+			console.log(poolNumberWei)
+			const poolNumber = parseInt(poolNumberWei._hex, 16)
 			const poolsTemp = []
+			console.log(poolNumber)
 			for (let i = 0; i < poolNumber; i++) {
 				const poolAddress = await poolCreatorContract.poolAddress(i)
 				poolsTemp.push({

@@ -199,13 +199,16 @@ const PoolCard = (props) => {
   const { poolAddress, tokenAAddress, tokenBAddress, lpAddress, rewardAddress } = props
   const { tokenASymbol, tokenBSymbol, rewardSymbol, isApproved, modalAmount, earnedAmount, depositedAmount, modalType, lpAvailable, 
     setModalAmount, approve, stake, withdraw, claim, setModalType } = usePool({ poolAddress, tokenAAddress, tokenBAddress, lpAddress, rewardAddress })
-  // if (!tokenASymbol) {
-  //   return (
-  //     <EmptyCard>
-  //       <Spinner />
-  //     </EmptyCard>
-  //   )
-  // }
+  if (tokenASymbol && tokenBSymbol && rewardSymbol && isApproved) {
+    console.log(props)
+  }
+  if (!tokenASymbol) {
+    return (
+      <EmptyCard>
+        <Spinner />
+      </EmptyCard>
+    )
+  }
   return (
     <>
       <Card>
@@ -247,12 +250,12 @@ const PoolCard = (props) => {
   )
 }
 
-const PoolCardWrap = ({ poolAddress } )=> {
+const PoolCardWrap = ({ poolAddress, index } )=> {
   const props = usePoolInfo({ poolAddress })
   const { tokenAAddress, tokenBAddress, lpAddress, rewardAddress } = props
 
   return (
-    <PoolCard poolAddress={poolAddress} tokenAAddress={tokenAAddress} tokenBAddress={tokenBAddress} lpAddress={lpAddress} rewardAddress={rewardAddress} />
+    <PoolCard poolAddress={poolAddress} tokenAAddress={tokenAAddress} tokenBAddress={tokenBAddress} lpAddress={lpAddress} rewardAddress={rewardAddress} index={index} />
   )
 }
 
@@ -265,8 +268,8 @@ const renderPoolCards = (pools) => {
       </LoadingWrap>
     ) 
   }
-  return pools.map(({ poolAddress }) => {
-    return <PoolCardWrap poolAddress={poolAddress} key={poolAddress}/>
+  return pools.map(({ poolAddress }, index) => {
+    return <PoolCardWrap poolAddress={poolAddress} key={poolAddress} index={index}/>
   })
 }
 
