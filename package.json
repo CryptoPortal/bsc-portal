@@ -9,7 +9,7 @@
     "@ethersproject/experimental": "^5.0.1",
     "@ethersproject/units": "5.0.11",
     "@pancakeswap-libs/sdk": "1.0.1",
-    "@pancakeswap-libs/uikit": "^0.13.1",
+    "@pancakeswap-libs/uikit": "CryptoPortal/bscportal-uikit",
     "@popperjs/core": "^2.4.4",
     "@reach/dialog": "^0.10.3",
     "@reach/portal": "^0.10.3",

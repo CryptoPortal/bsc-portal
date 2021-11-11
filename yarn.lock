@@ -2238,10 +2238,9 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@pancakeswap-libs/uikit@^0.13.1":
+"@pancakeswap-libs/uikit@CryptoPortal/bscportal-uikit":
   version "0.13.1"
-  resolved "https://registry.yarnpkg.com/@pancakeswap-libs/uikit/-/uikit-0.13.1.tgz#75e9feaa46ea9e195381c5a218b7652f08b19c5e"
-  integrity sha512-1Fs0mAFK3xRLYw9elSv3lvDDDnLJlv8bNWMug/Z29jCIoKBRM83P9TeijB8vj6dLhu6srs9p9NYTixgxURGDpQ==
+  resolved "https://codeload.github.com/CryptoPortal/bscportal-uikit/tar.gz/12e8dc6176a23b3fdf44fd3e91ba103dc4de27dd"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"

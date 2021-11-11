@@ -23,7 +23,7 @@ const config: MenuEntry[] = [
   },
   {
     label: 'Faas',
-    icon: 'TradeIcon',
+    icon: 'FaasIcon',
     initialOpenState: true,
     items: [
       {
@@ -33,7 +33,7 @@ const config: MenuEntry[] = [
       {
         label: 'Create farm',
         href: '/faas',
-      }
+      },
     ],
   },
 ]
